@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+       <style>
+    
+        .main{
+            display: flex;
+            width: 100%;
+            height: 10vh;
+            border: 1px solid;
+            box-shadow: 0px 1px 10px rgb(90, 107, 90);   
+        }
+        .main>img{
+          width: 7vw;
+          height:10vh ;
+        }
+        .main>h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2vw;
+            margin-top: -1vw;
+            align-content: center;
+            color: blue;
+        }
+        .main>h2{
+            font-size:2vw ;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: -5vw;
+            margin-top: 2vw;
+        }
+        .main>a{
+            border: 0.1vw solid black;
+            border-radius: 1vw;
+            padding: 1vw;
+            background: rgb(122, 122, 148);
+            font-size: 2vw;
+            align-content: center;
+            margin-left: 5.6vw;
+            margin-right: -2vw;
+            margin-right: 2vw;
+            text-decoration: none;
+            color: blue
+        }
+        .main>a:hover{
+            color:  rgb(122, 122, 148);;
+            background: rgb(17, 17, 139);
+            transition: 0.6s;
+        }
+        .main>input{
+            margin-left: 3.8vw;
+            font-size: 1.5vw;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            position: relative;
+            border-radius: 1vw;        
+        }
+        .main>input:hover{
+            background: rgb(165, 165, 184);
+            transition: 0.6s;
+            color: blue;
+        }
+        .main>i{
+            position: absolute;
+            margin-left: 92vw;
+            margin-top: 1.8vw;
+            font-size: 1.9vw; 
+        }
+        .slider{
+            display: grid;
+            margin-top: 3vw;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 220px 220px;
+            gap: 3vw;
+        }
+        .box{
+            border: 2px solid black;
+            box-shadow: 0px 1px 10px rgb(0, 0, 0);
+
+        }
+        .box1{
+          grid-row: 1/3;
+          overflow: scroll;
+        }
+        .box1>h1{
+            margin-top: 1vw;
+           text-align: center;
+           font-size: 2.5vw;
+           color: blue;
+           text-decoration:underline;
+           text-shadow: 0px 1px 5px black;           
+        }
+        .box1>h2:hover{
+            background: rgb(80, 80, 193);
+        }
+        .box1>h3:hover{
+            background: rgb(80, 80, 193);
+        }
+        .box1>h4:hover{
+            background: rgb(80, 80, 193);
+        }
+        .box1>h5:hover{
+            background: rgb(80, 80, 193);
+        }
+        .box1>h6:hover{
+            background: rgb(80, 80, 193);
+        }
+        .box1>p:hover{
+            background: rgb(80, 80, 193);
+        }
+        .box1>h2{
+            text-align: center;
+            margin-top: 3vw;
+            font-size: 1.8vw;
+            font-weight: bold;
+            border: 1px solid blue;
+            border-radius: 1vw;
+            box-shadow: 0px 1px 10px black;
+            padding: 1vw;
+        }
+        .box1>h3{
+            text-align: center;
+            margin-top: 2.2vw;
+            font-size: 1.8vw;
+            font-weight: bold;
+            border: 1px solid blue;
+            border-radius: 1vw;
+            box-shadow: 0px 1px 10px black;
+            padding: 1vw;
+        }
+        .box1>h4{
+            text-align: center;
+            margin-top: 2.2vw;
+            font-size: 1.8vw;
+            font-weight: bold;
+            border: 1px solid blue;
+            border-radius: 1vw;
+            box-shadow: 0px 1px 10px black;
+            padding: 1vw;
+        }
+        .box1>h5{
+            text-align: center;
+            margin-top: 2.2vw;
+            font-size: 1.8vw;
+            font-weight: bold;
+            border: 1px solid blue;
+            border-radius: 1vw;
+            box-shadow: 0px 1px 10px black;
+            padding: 1vw;
+        } 
+        .box1>h6{
+            text-align: center;
+            margin-top: 2.2vw;
+            font-size: 1.8vw;
+            font-weight: bold;
+            border: 1px solid blue;
+            border-radius: 1vw;
+            box-shadow: 0px 1px 10px black;
+            padding: 1vw;
+        }
+        .box1>p{
+            text-align: center;
+           margin-top: -1.5vw;
+            font-size: 1.8vw;
+            font-weight: bold;
+            border: 1px solid blue;
+            border-radius: 1vw;
+            box-shadow: 0px 1px 10px black;
+            padding: 1vw;
+        }
+        .first{
+            font-size: 2vw;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: blue;
+            text-shadow: 0px 1px 4px black;
+        }
+        .ma{
+            width: 100%;
+            border: 1px solid black;
+            box-shadow: 1px 0px 10px rgb(0, 0, 0);;
+        }
+        .box2{
+            background-image: url(https://media.licdn.com/dms/image/v2/D5612AQHyLFkv9YBcGA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1715058774193?e=2147483647&v=beta&t=7yqv62DbvJWPvycGiDX4FGb79GOPsVB_dreB-SHh36E);
+            background-size: cover;
+        
+        }
+        .box3{
+            background-image: url(https://nirmawebsite.s3.ap-south-1.amazonaws.com/wp-content/uploads/2024/08/cyber-security-background-meuqfzxcg4gdd26s-768x432.jpg);
+            background-size: cover;
+        }
+        .box4{
+            background-image: url(https://img.freepik.com/premium-photo/magnifying-glass-zooms-words-trading-financial-assets-computer-screen-with-charts_1429-27287.jpg?w=1480);
+            background-size: cover;
+        }
+        .box5{
+            background-image: url(https://nise.org.pk/wp-content/uploads/2017/02/Graphic-Designing1.jpg);
+            background-size: cover;
+        }
+        .box6{
+            background-image: url(https://usa.bootcampcdn.com/wp-content/uploads/sites/108/2022/11/DM_blog_post_image_03_guetzli-850x412.jpg);
+            background-size: cover;
+        }
+        .box7{
+            background-image: url(https://amazon-asin.com/blog/wp-content/uploads/2021/12/amazon-marketing-2022.jpg);
+            background-size: cover;
+        }
+        .byond{
+            margin-top: 1vw;
+            width: 100%;
+            height: 0%;
+            border: 1px solid black;
+            box-shadow: 0px 1px 10px black;
+        }
+        .second{
+            text-align: center;
+            font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2.5vw;
+            margin-top: 1vw;
+            color: blue;
+            text-shadow: 0px 1px 10px black;
+        }
+        .main1{
+            display: flex;
+            width: 100%;
+            height: 50vh;
+            
+        }
+        .main2{
+            background-image: url(https://img.freepik.com/premium-vector/design-tech-marketing-agency-logo_579306-9397.jpg?w=826);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 30%;
+            height: 30vh;
+            margin-left: 19vw;
+            border: 1px solid black;
+            box-shadow: 0px 1px 10px black;
+        }
+        .main2>h1{
+            font-size: 2vw;
+            margin-left: 16vw;
+            margin-top: 9vh;
+            text-shadow: 0px 1px 10px rgb(49, 49, 141);
+        }
+        .main3{
+            width: 30%;
+            height: 30vh;
+            border: 1px solid black;
+            box-shadow: 0px 1px 10px black;
+            backdrop-filter: blur(2px);
+            transform: translate(-5vw,6vw);
+            text-align: center;
+            font-size: 1.7vw;
+            color: blue;
+        }
+        .bol{
+            width: 100%;
+            height: 0%;
+            border: 1px solid black;
+            box-shadow:0px 1px 10px black ;
+        }
+        .bolder{
+            display: flex;
+            width: 100%;
+            height: vh;
+        }
+        .bolder>h1{
+            margin-left: 16vw;
+            font-size: 2vw;
+            text-decoration: underline blue;
+            
+        }
+        .non{
+            display: flex;
+            width: 100%;
+        }
+        .non>h1{
+            text-decoration:underline blue;
+            font-size: 2vw;
+            margin-left: 18vw;
+        }
+        .non>h1:hover{
+            color: blue;
+        }
+        .bolder>h1:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+      <img src="https://img.freepik.com/premium-vector/design-tech-marketing-agency-logo_579306-9397.jpg?w=826">
+      <h1>digital</h1>
+      <h2>marketing</h2>
+      <a href="">home</a>
+      <a href="">more</a>
+      <a href="">about</a>
+      <a href="">course</a>
+      <input type="text" placeholder="search">
+      <i class="fa fa-search"></i>
+      </div>
+      <h1 class="first">information about it courses</h1>
+      <div class="ma"></div>
+      <div class="slider">
+      <div class="box box1">
+        <h1>it courses</h1>
+        <h2>web developer</h2>
+        <h3>cyber security</h3>
+        <h4>trading</h4>
+        <h5>graphic designer</h5>
+        <h6>digital marketing</h6>
+        <p>amazon worker</p>
+      </div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+      <div class="box box5"></div>
+      <div class="box box6"></div>
+      <div class="box box7"></div>
+    </div>
+    <div class="byond"></div>
+    <h1 class="second">digital marketing in pakistan</h1>
+    <div class="main1">
+         <div class="main2"><h1>digital<br> marketing</h1></div>
+         <div class="main3"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsum quisquam laboriosam necessitatibus, ratione nam optio alias. Nam ut enim eveniet nisi laboriosam, cum perspiciatis corporis quae saepe, maxime velit.</p></div>
+    </div>
+    <div class="bol"></div>
+    <div class="bolder">
+        <h1>learn about</h1>
+        <h1>contact info</h2>
+        <h1>0123-1234-345</h3>
+    </div>
+    <div class="non">
+     <h1>more</h1>
+     <h1>email</h1>
+     <h1>whatshapp</h1> 
+    </div>
+   
+
+    
+</body>
+</html>
